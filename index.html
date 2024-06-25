@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mascotas - Gatitos</title>
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- Uso de CDN de FontAwesome (mala práctica para carga lenta) -->
     <link rel="stylesheet" href="css/font-awesome-all.min.css">
-    
+
     <!-- Mala práctica: Incluir estilos CSS en línea en el archivo HTML -->
     <style>
-        
+
     </style>
 </head>
+
 <body>
     <header>
         <h1>Gatitos Encantadores</h1>
@@ -30,7 +32,8 @@
     <main>
         <section>
             <h2>¡Bienvenido a nuestra web!</h2>
-            <p>Somos amantes de los gatitos y aquí encontrarás toda la información que necesitas sobre estos adorables animales.</p>
+            <p>Somos amantes de los gatitos y aquí encontrarás toda la información que necesitas sobre estos adorables
+                animales.</p>
         </section>
 
         <section>
@@ -45,7 +48,8 @@
 
         <section>
             <h2>Servicios para Gatitos</h2>
-            <p>Ofrecemos una amplia gama de servicios para satisfacer todas las necesidades de tus gatitos, desde cuidados médicos hasta juguetes divertidos.</p>
+            <p>Ofrecemos una amplia gama de servicios para satisfacer todas las necesidades de tus gatitos, desde
+                cuidados médicos hasta juguetes divertidos.</p>
             <div class="icon-container">
                 <i class="fas fa-cat"></i>
                 <i class="fas fa-paw"></i>
@@ -71,9 +75,18 @@
         <!-- Sección con un iframe innecesario -->
         <section class="external-script">
             <h2>¡Descubre Más en Nuestro Sitio Web Externo!</h2>
-            <p>Explora más contenido interesante y útil sobre el cuidado de los gatitos en nuestro sitio web externo. Encontrarás artículos, videos y recursos que te ayudarán a cuidar mejor a tu mascota. Haz clic en el enlace a continuación para visitar nuestro sitio web asociado y descubrir más.</p>
-            <p>En nuestro sitio web externo <a href="https://www.nationalgeographicla.com/animales/gato-domestico">National Geographic - Gato Doméstico</a>, podrás encontrar guías detalladas sobre la nutrición adecuada para gatos, consejos para el entrenamiento y comportamiento felino, y muchas historias de éxito de otros amantes de los gatos. Además, ofrecemos una comunidad donde puedes interactuar con otros dueños de gatos, compartir tus experiencias y obtener apoyo.</p>
-            <p>No te pierdas nuestros videos educativos que cubren una variedad de temas, desde cómo jugar de manera segura con tu gato hasta cómo identificar y tratar problemas de salud comunes. ¡Visítanos ahora y mejora la vida de tu gatito!</p>
+            <p>Explora más contenido interesante y útil sobre el cuidado de los gatitos en nuestro sitio web externo.
+                Encontrarás artículos, videos y recursos que te ayudarán a cuidar mejor a tu mascota. Haz clic en el
+                enlace a continuación para visitar nuestro sitio web asociado y descubrir más.</p>
+            <p>En nuestro sitio web externo <a
+                    href="https://www.nationalgeographicla.com/animales/gato-domestico">National Geographic - Gato
+                    Doméstico</a>, podrás encontrar guías detalladas sobre la nutrición adecuada para gatos, consejos
+                para el entrenamiento y comportamiento felino, y muchas historias de éxito de otros amantes de los
+                gatos. Además, ofrecemos una comunidad donde puedes interactuar con otros dueños de gatos, compartir tus
+                experiencias y obtener apoyo.</p>
+            <p>No te pierdas nuestros videos educativos que cubren una variedad de temas, desde cómo jugar de manera
+                segura con tu gato hasta cómo identificar y tratar problemas de salud comunes. ¡Visítanos ahora y mejora
+                la vida de tu gatito!</p>
         </section>
 
         <!-- Sección con GIFs animados de gatitos -->
@@ -96,8 +109,13 @@
 
     <!-- Mueva el código JavaScript a un archivo externo. -->
     <script src="main.js" defer></script>
-    
-    <!-- Mala práctica: Imágenes sin tamaño especificado -->
-    <img src="imgs/gato-naranja.webp" alt="Gatito sin tamaño" width="300" height="200">
+
+    <!-- Uso de Imágenes Responsivas -->
+    <picture>
+        <source srcset="imgs/gato-naranja-small.webp" media="(max-width: 600px)">
+        <source srcset="imgs/gato-naranja.webp">
+        <img src="imgs/gato-naranja.webp" alt="Gatito Naranja" width="300" height="200">
+    </picture>
 </body>
+
 </html>
