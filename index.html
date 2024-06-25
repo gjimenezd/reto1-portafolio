@@ -102,15 +102,12 @@
         <p>&copy; 2024 Gatitos Encantadores</p>
         <p>Todos los derechos reservados.</p>
     </footer>
-    <!-- Mala práctica: Cargar múltiples librerías de JavaScript desde CDN -->
+    <!-- Combine y minifique las librerías JavaScript necesarias y cargue un solo archivo. -->
     <script src="scripts/combined-scripts.min.js" defer></script>
 
-    <!-- Mala práctica: Inline JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log("Document loaded");
-        });
-    </script>
+    <!-- Mueva el código JavaScript a un archivo externo. -->
+    <script src="main.js" defer></script>
+    
     <!-- Mala práctica: Imágenes sin tamaño especificado -->
     <img src="imgs/gato-naranja.webp" alt="Gatito sin tamaño">
 </body>
